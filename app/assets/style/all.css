@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-base leading-[1.45454] text-primary
+  }
+  span {
+    @apply text-primary
+  }
+}
+
+@layer utilities {
+  .writing-lr {
+    writing-mode: vertical-lr;
+  }
+  .shadow-banner {
+    box-shadow:0 180px rgb(255 225 128 / 50%) inset ; 
+  }
+}

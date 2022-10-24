@@ -5,22 +5,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>
+    <%- title %>
+  </title>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
+  <header class="py-[30px]">
+    <!-- 手機用導覽列 -->
+    <div class="container flex justify-between items-center md:hidden">
+      <button class="flex items-center"><span class="material-icons">menu</span></button>
+      <a href="index.html">
+        <img
+          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg"
+          alt="logo" class="w-[114.14px]">
+      </a>
+      <a href="#" class="flex items-center"><span class="material-icons">shopping_cart</span></a>
+    </div>
+    <!-- 平版＆電腦用導覽列 -->
+    <div class="hidden container md:flex md:items-center md:justify-between">
+      <!-- header左方logo -->
+      <a href="index.html"><img
+          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg"
+          alt="pad_logo" class="w-[219.49px]"></a>
+      <!-- header右方區塊 -->
+      <div class="flex items-center">
+        <!-- header右方導覽列 -->
+        <ul class="flex items-center font-bold -mx-[30px] ">
+          <li><a
+              class="px-[30px] pt-[41px] pb-4 lg:hover:duration-300 lg:hover:ease-in-out lg:hover:border-b-4 lg:hover:border-primary"
+              href="#">首頁</a></li>
+          <li><a
+              class="px-[30px] pt-[41px] pb-4 lg:hover:duration-300 lg:hover:ease-in-out lg:hover:border-b-4 lg:hover:border-primary"
+              href="#">甜點</a></li>
+          <li><a
+              class="px-[30px] pt-[41px] pb-4 lg:hover:duration-300 lg:hover:ease-in-out lg:hover:border-b-4 lg:hover:border-primary"
+              href="#">登入</a></li>
+        </ul>
+        <!-- header右方購物車 -->
+        <a href="#"
+          class="flex items-center cursor-pointer lg:hover:duration-300 lg:hover:ease-in-out lg:hover:opacity-50"><span
+            class="material-icons ml-20">shopping_cart</span></a>
+      </div>
+    </div>
   </header>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+    <footer class="bg-primary">
+      <!-- footer上方文字區 -->
+      <div class="container py-[30px] md:flex md:items-center md:justify-between md:px-[92px]">
+        <!-- footer標題區 -->
+        <div class="flex justify-center items-center mb-[30px] md:mb-0">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg"
+            alt="logo-light" class="w-10 mr-5">
+          <h3 class="text-light_plus_primary text-2xl leading-[1.20833] font-normal">訂閱你我的甜蜜郵件</h3>
+        </div>
+        <!-- email欄位 -->
+        <form class="md:w-[380px]">
+          <label class="flex">
+            <div class="flex justify-center items-center pl-5 bg-light_plus_primary"><span
+                class="material-icons">email</span></div>
+            <input type="email" value="" placeholder="請輸入電子信箱"
+              class="block w-full py-4 bg-light_plus_primary border-0  text-sm focus:ring-0 " />
+            <button class="bg-secondary px-5 flex items-center justify-center" type="submit"><span
+                class="material-icons">arrow_forward</span></button>
+          </label>
+        </form>
+      </div>
+      <!-- footer下方文字區 -->
+      <div class="bg-light_plus_primary">
+        <!-- logo及文字區域 -->
+        <div class="container  pt-[38.9px] md:flex md:justify-between md:mb-[30px] md:px-[92px]">
+          <div class="md:flex md:flex-col md:justify-between">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg"
+              alt="footer_logo" class="w-[171.22px] mb-[39.5px]">
+
+            <!-- 電話＆信箱＆地址 -->
+            <ul class="mb-[37px] md:mb-0">
+              <li><a href="tel:+886-7-1234-5678"
+                  class=" lg:hover:opacity-50 lg:hover:duration-300 lg:hover:ease-in-out">07-1234-5678</a></li>
+              <li><a href="mailto:sweetaste@email.com"
+                  class=" lg:hover:opacity-50 lg:hover:duration-300 lg:hover:ease-in-out">sweetaste@email.com</a></li>
+              <li>
+                <p>800 高雄市新興區幸福路 520 號</p>
+              </li>
+            </ul>
+          </div>
+          <img src="https://tina3295.github.io/sweet_taste/sweet%20homepage/images/lg-NoReason.svg" alt=""
+            class="hidden w-[59.28px] md:block">
+        </div>
+
+        <!-- icon及版權區域 -->
+        <div class="container pb-[30px] md:flex md:items-center md:justify-between md:px-[92px]">
+          <!-- icons -->
+          <ul class="flex space-x-2 mb-[23px] md:mb-0">
+            <li><a href="#"><img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-line%40.svg"
+                  alt="line" class="w-8 lg:hover:opacity-50 lg:hover:duration-300 lg:hover:ease-in-out"></a></li>
+            <li><a href="#"><img
+                  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-facebook.svg"
+                  alt="facebook"
+                  class="w-8 rounded-md lg:hover:opacity-50 lg:hover:duration-300 lg:hover:ease-in-out"></a></li>
+          </ul>
+          <!-- 下方文字 -->
+          <p class="leading-[1.1875]">© 2018 Sweetaste* All Rights Reserved</p>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
 </body>
 
 </html>

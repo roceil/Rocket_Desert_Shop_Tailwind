@@ -12,6 +12,7 @@ module.exports = {
         'img-favorite01': "url('https://tina3295.github.io/sweet_taste/sweet%20homepage/images/SW02.png')",
         'img-favorite02': "url('https://tina3295.github.io/sweet_taste/sweet%20homepage/images/SW05.png')",
         'img-favorite03': "url('https://tina3295.github.io/sweet_taste/sweet%20homepage/images/SW03.png')",
+        'favoBtn': "url('https://tina3295.github.io/sweet_taste/sweet/images/favorite_border.png')",
       }
     },
     container: {

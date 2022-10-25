@@ -15,13 +15,31 @@
   .writing-lr {
     writing-mode: vertical-lr;
   }
+  .writing-rl {
+    writing-mode: vertical-rl;
+  }
   .shadow-banner {
     box-shadow: 0 180px rgb(255 225 128 / 50%) inset;
   }
-  .banner-bg {
-    @apply bg-img-favorite01 bg-no-repeat bg-center bg-cover -z-20  ; 
+  .banner-before-01 {
+    @apply before:absolute before:w-full before:h-full before:top-0 before:backdrop-blur-[5px] before:bg-secondary/80 before:hover:backdrop-blur-none before:hover:bg-secondary/50 before:hover:duration-300 before:hover:ease-in-out; 
   }
-  .banner-filter {
-    @apply  
+  .banner-before-02 {
+    @apply before:absolute before:w-full before:h-full before:top-0 before:backdrop-blur-[5px] before:bg-primary/80 before:hover:backdrop-blur-none before:hover:bg-primary/50 before:hover:duration-300 before:hover:ease-in-out; 
+  }
+  .banner-before-03 {
+    @apply before:absolute before:w-full before:h-full before:top-0 before:backdrop-blur-[5px] before:bg-primary/80 before:hover:backdrop-blur-none before:hover:bg-primary/50 before:hover:duration-300 before:hover:ease-in-out; 
+  }
+  .banner-after-01 {
+    @apply  after:bg-img-favorite01 after:absolute after:w-full after:h-full after:top-0 after:left-0 after:-z-20 after:bg-center after:bg-no-repeat after:bg-cover 
+  }
+  .banner-after-02 {
+    @apply  after:bg-img-favorite02 after:absolute after:w-full after:h-full after:top-0 after:left-0 after:-z-20 after:bg-center after:bg-no-repeat after:bg-cover 
+  }
+  .banner-after-03 {
+    @apply  after:bg-img-favorite03 after:absolute after:w-full after:h-full after:top-0 after:left-0 after:-z-20 after:bg-center after:bg-no-repeat after:bg-cover 
+  }
+  .test{
+    font: normal normal 600 24px/40px PingFang TC;
   }
 }

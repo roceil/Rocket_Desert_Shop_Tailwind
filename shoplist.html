@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./assets/style/all.css">
   <!-- google font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- SMTP-JS -->
+  <script src=" https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -37,7 +39,7 @@
         <ul class="flex items-center font-bold -mx-[30px] ">
           <li><a
               class="px-[30px] pt-[41px] pb-4 lg:hover:duration-300 lg:hover:ease-in-out lg:hover:border-b-4 lg:hover:border-primary"
-              href="#">首頁</a></li>
+              href="index.html">首頁</a></li>
           <li><a
               class="px-[30px] pt-[41px] pb-4 lg:hover:duration-300 lg:hover:ease-in-out lg:hover:border-b-4 lg:hover:border-primary"
               href="shoplist.html">甜點</a></li>
@@ -55,20 +57,206 @@
 
   
 <!-- banner -->
+<section class="lg:mb-[60px]">
+  <div class="md:container">
+    <img src="https://tina3295.github.io/sweet_taste/sweet/images/banner.png" alt="banner" class="object-cover">
+  </div>
+</section>
+
+<!-- main -->
 <section>
-  <img src="https://tina3295.github.io/sweet_taste/sweet/images/banner.png" alt="banner"  class="object-cover">
+  <div class="md:container">
+    <div class="lg:flex lg:mb-0 md:-mx-0 ">
+      <!-- 甜點類別 -->
+      <ul class="w-full  mb-[30px] text-center lg:mr-5 lg:mb-0">
+        <h2 class="text-2xl leading-[1.66667] py-4 text-white font-semibold bg-primary">甜點類別</h2>
+        <!-- 所有甜點（48） -->
+        <li class="border border-light_plus_primary"><a href="#"
+            class="test text-2xl leading-[1.6666] py-4 text-primary font-semibold bg-light_plus_primary block">所有甜點（48）</a>
+        </li>
+        <!-- 本日精選（10） -->
+        <li class="border border-t-0 border-light_plus_primary"><a href="#"
+            class="test text-2xl leading-[1.6666] py-4 text-primary font-semibold block lg:hover:bg-light_plus_primary lg:hover:duration-300 lg:hover:ease-in-out">本日精選（10）</a></li>
+        <!-- 人氣推薦（26） -->
+        <li class="border border-t-0 border-light_plus_primary"><a href="#"
+            class="test text-2xl leading-[1.6666] py-4 text-primary font-semibold block lg:hover:bg-light_plus_primary lg:hover:duration-300 lg:hover:ease-in-out">人氣推薦（26）</a></li>
+        <!-- 新品上市（12） -->
+        <li class="border border-t-0 border-light_plus_primary"><a href="#"
+            class="test text-2xl leading-[1.6666] py-4 text-primary font-semibold block lg:hover:bg-light_plus_primary lg:hover:duration-300 lg:hover:ease-in-out">新品上市（12）</a></li>
+      </ul>
 
-  <ul class="w-full text-center">
-    <h2 class="text-2xl leading-[1.66667] py-4 text-white font-semibold bg-primary">甜點類別</h2>
+      <!-- 商品列表 -->
+      <ul class="flex flex-col md:flex-row md:flex-wrap justify-center  items-center md:-mx-2">
+        <!-- 01 -->
+        <li
+          class="relative  after:absolute after:bg-favoBtn after:w-[22px] after:h-[22px] after:top-[19px] after:right-[22px] after:bg-no-repeat after:cursor-pointer md:w-1/2 md:flex md:flex-col md:px-2">
+          <!-- 本日精選 -->
+          <div class="absolute bg-primary w-[36px] h-[106.73px] top-0 left-5 flex justify-center items-center">
+            <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
+          </div>
+          <!-- 商品圖片 -->
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1" class="w-full">
+          <!-- 商品名稱 -->
+          <div class="flex">
+            <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">
+              焦糖馬卡龍</p>
+            <p
+              class="text-xl text-center leading-[1.4] font-semibold py-[14px]  border border-l-0 border-light_plus_primary  w-1/2">
+              NT$ 450</p>
+          </div>
+          <!-- 加入購物車 -->
+          <button
+            class="text-center text-2xl leading-snug font-semibold py-4  bg-light_plus_primary w-full lg:hover:bg-primary lg:hover:text-light_plus_primary lg:hover:duration-300 lg:hover:ease-in-out">加入購物車</button>
+        </li>
 
-    <li class="ring ring-light_plus_primary"><a href="#" class="test text-2xl leading-[1.6666] py-4 text-primary font-semibold bg-light_plus_primary block">所有甜點（48）</a></li>
+        <!-- 02 -->
+        <li
+          class="relative after:absolute after:bg-favoBtn after:w-[22px] after:h-[22px] after:top-[19px] after:right-[22px] after:bg-no-repeat after:cursor-pointer md:w-1/2 md:flex md:flex-col md:px-2 mt-4 md:mt-0">
+          <!-- 本日精選 -->
+          <div class="absolute bg-primary w-[36px] h-[106.73px] top-0 left-5 flex justify-center items-center">
+            <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
+          </div>
+          <!-- 商品圖片 -->
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1">
+          <!-- 商品名稱 -->
+          <div class="flex">
+            <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">
+              焦糖馬卡龍</p>
+            <p
+              class="text-xl text-center leading-[1.4] font-semibold py-[14px]  border border-l-0 border-light_plus_primary  w-1/2">
+              NT$ 450</p>
+          </div>
+          <!-- 加入購物車 -->
+          <button
+            class="text-center text-2xl leading-snug font-semibold py-4  bg-light_plus_primary w-full lg:hover:bg-primary lg:hover:text-light_plus_primary lg:hover:duration-300 lg:hover:ease-in-out">加入購物車</button>
+        </li>
 
-    <li class="ring ring-light_plus_primary"><a href="#" class="test text-2xl leading-[1.6666] py-4 text-primary font-semibold block">本日精選（10）</a></li>
+        <!-- 03 -->
+        <li
+          class="relative after:absolute after:bg-favoBtn after:w-[22px] after:h-[22px] after:top-[19px] after:right-[22px] after:bg-no-repeat after:cursor-pointer md:w-1/2 md:flex md:flex-col md:px-2 mt-4">
+          <!-- 本日精選 -->
+          <div class="absolute bg-primary w-[36px] h-[106.73px] top-0 left-5 flex justify-center items-center">
+            <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
+          </div>
+          <!-- 商品圖片 -->
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1">
+          <!-- 商品名稱 -->
+          <div class="flex">
+            <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">
+              焦糖馬卡龍</p>
+            <p
+              class="text-xl text-center leading-[1.4] font-semibold py-[14px]  border border-l-0 border-light_plus_primary  w-1/2">
+              NT$ 450</p>
+          </div>
+          <!-- 加入購物車 -->
+          <button
+            class="text-center text-2xl leading-snug font-semibold py-4  bg-light_plus_primary w-full lg:hover:bg-primary lg:hover:text-light_plus_primary lg:hover:duration-300 lg:hover:ease-in-out">加入購物車</button>
+        </li>
 
-    <li class="ring ring-light_plus_primary"><a href="#" class="test text-2xl leading-[1.6666] py-4 text-primary font-semibold block">人氣推薦（26）</a></li>
+        <!-- 04 -->
+        <li
+          class="hidden relative after:absolute after:bg-favoBtn after:w-[22px] after:h-[22px] after:top-[19px] after:right-[22px] after:bg-no-repeat after:cursor-pointer md:w-1/2 md:flex md:flex-col md:px-2 mt-4">
+          <!-- 本日精選 -->
+          <div class="absolute bg-primary w-[36px] h-[106.73px] top-0 left-5 flex justify-center items-center">
+            <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
+          </div>
+          <!-- 商品圖片 -->
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1">
+          <!-- 商品名稱 -->
+          <div class="flex">
+            <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">
+              焦糖馬卡龍</p>
+            <p
+              class="text-xl text-center leading-[1.4] font-semibold py-[14px]  border border-l-0 border-light_plus_primary  w-1/2">
+              NT$ 450</p>
+          </div>
+          <!-- 加入購物車 -->
+          <button
+            class="text-center text-2xl leading-snug font-semibold py-4  bg-light_plus_primary w-full lg:hover:bg-primary lg:hover:text-light_plus_primary lg:hover:duration-300 lg:hover:ease-in-out">加入購物車</button>
+        </li>
 
-    <li class="ring ring-light_plus_primary"><a href="#" class="test text-2xl leading-[1.6666] py-4 text-primary font-semibold block">新品上市（12）</a></li>
-  </ul>
+        <!-- 05 -->
+        <li
+          class="hidden relative after:absolute after:bg-favoBtn after:w-[22px] after:h-[22px] after:top-[19px] after:right-[22px] after:bg-no-repeat after:cursor-pointer md:w-1/2 md:flex md:flex-col md:px-2 mt-4">
+          <!-- 本日精選 -->
+          <div class="absolute bg-primary w-[36px] h-[106.73px] top-0 left-5 flex justify-center items-center">
+            <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
+          </div>
+          <!-- 商品圖片 -->
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1">
+          <!-- 商品名稱 -->
+          <div class="flex">
+            <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">
+              焦糖馬卡龍</p>
+            <p
+              class="text-xl text-center leading-[1.4] font-semibold py-[14px]  border border-l-0 border-light_plus_primary  w-1/2">
+              NT$ 450</p>
+          </div>
+          <!-- 加入購物車 -->
+          <button
+            class="text-center text-2xl leading-snug font-semibold py-4 bg-light_plus_primary w-full lg:hover:bg-primary lg:hover:text-light_plus_primary lg:hover:duration-300 lg:hover:ease-in-out">加入購物車</button>
+        </li>
+
+        <!-- 06 -->
+        <li
+          class="hidden relative after:absolute after:bg-favoBtn after:w-[22px] after:h-[22px] after:top-[19px] after:right-[22px] after:bg-no-repeat after:cursor-pointer md:w-1/2 md:flex md:flex-col md:px-2 mt-4">
+          <!-- 本日精選 -->
+          <div class="absolute bg-primary w-[36px] h-[106.73px] top-0 left-5 flex justify-center items-center">
+            <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
+          </div>
+          <!-- 商品圖片 -->
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1">
+          <!-- 商品名稱 -->
+          <div class="flex">
+            <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">
+              焦糖馬卡龍</p>
+            <p
+              class="text-xl text-center leading-[1.4] font-semibold py-[14px]  border border-l-0 border-light_plus_primary  w-1/2">
+              NT$ 450</p>
+          </div>
+          <!-- 加入購物車 -->
+          <button
+            class="text-center text-2xl leading-snug font-semibold py-4  bg-light_plus_primary w-full lg:hover:bg-primary lg:hover:text-light_plus_primary lg:hover:duration-300 lg:hover:ease-in-out">加入購物車</button>
+        </li>
+
+
+
+      </ul>
+    </div>
+
+    <div class="mt-[30px] mb-[30px] md:flex justify-end">
+      <ul class="flex justify-center">
+        <!-- arrow_left -->
+        <li class="group">
+          <a href="#" class="w-[60px] h-[60px] ring-[1px] ring-light_plus_primary flex justify-center items-center lg:group-hover:bg-primary lg:group-hover:duration-300 lg:group-hover:ease-in-out">
+            <span class="material-icons lg:group-hover:text-white">
+              arrow_left
+            </span></a></li>
+
+        <!-- 01 -->
+        <li class=""><a href="#"
+            class=" flex justify-center items-center text-xl leading-[1.4] w-[60px] h-[60px] ring-[1px] ring-light_plus_primary text-white bg-primary">1</a>
+        </li>
+
+        <!-- 02 -->
+        <li class=""><a href="#"
+            class=" flex justify-center items-center text-xl leading-[1.4] w-[60px] h-[60px] ring-[1px] ring-light_plus_primary lg:hover:bg-primary lg:hover:text-white lg:hover:duration-300 lg:hover:ease-in-out">2</a>
+        </li>
+
+        <!-- 03 -->
+        <li class=""><a href="#"
+            class=" flex justify-center items-center text-xl leading-[1.4] w-[60px] h-[60px] ring-[1px] ring-light_plus_primary lg:hover:bg-primary lg:hover:text-white lg:hover:duration-300 lg:hover:ease-in-out">3</a>
+        </li>
+
+        <!-- arrow_right -->
+        <li class="group"><a href="#"
+          class="w-[60px] h-[60px] ring-[1px] ring-light_plus_primary flex justify-center items-center lg:group-hover:bg-primary lg:group-hover:duration-300 lg:group-hover:ease-in-out"><span
+            class="material-icons lg:group-hover:text-white">
+            arrow_right
+          </span></a></li>
+      </ul>
+    </div>
+  </div>
 </section>
 
     <footer class="bg-primary">
@@ -82,14 +270,14 @@
           <h3 class="text-light_plus_primary text-2xl leading-[1.20833] font-normal">訂閱你我的甜蜜郵件</h3>
         </div>
         <!-- email欄位 -->
-        <form class="md:w-[380px]">
+        <form class="md:w-[280px] lg:w-[380px] ">
           <label class="flex">
             <div class="flex justify-center items-center pl-5 bg-light_plus_primary"><span
                 class="material-icons">email</span></div>
-            <input type="email" value="" placeholder="請輸入電子信箱"
-              class="block w-full py-4 bg-light_plus_primary border-0  text-sm focus:ring-0 " />
-            <button class="bg-secondary px-5 flex items-center justify-center" type="submit"><span
-                class="material-icons">arrow_forward</span></button>
+            <input id="emailSub" type="email" value="" placeholder="請輸入電子信箱"
+              class="emailSub block w-full py-4 bg-light_plus_primary border-0  text-sm focus:ring-0 " />
+            <button class="emailBtn group bg-secondary px-5 flex items-center justify-center lg:hover:bg-primary lg:hover:duration-300 lg:hover:ease-in-out" type="submit"><span
+                class="material-icons lg:group-hover:text-secondary lg:group-hover:duration-300 lg:group-hover:ease-in-out">arrow_forward</span></button>
           </label>
         </form>
       </div>

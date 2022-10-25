@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./assets/style/all.css">
   <!-- google font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- SMTP-JS -->
+  <script src=" https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -37,7 +39,7 @@
         <ul class="flex items-center font-bold -mx-[30px] ">
           <li><a
               class="px-[30px] pt-[41px] pb-4 lg:hover:duration-300 lg:hover:ease-in-out lg:hover:border-b-4 lg:hover:border-primary"
-              href="#">首頁</a></li>
+              href="index.html">首頁</a></li>
           <li><a
               class="px-[30px] pt-[41px] pb-4 lg:hover:duration-300 lg:hover:ease-in-out lg:hover:border-b-4 lg:hover:border-primary"
               href="shoplist.html">甜點</a></li>
@@ -135,14 +137,14 @@
           <h3 class="text-light_plus_primary text-2xl leading-[1.20833] font-normal">訂閱你我的甜蜜郵件</h3>
         </div>
         <!-- email欄位 -->
-        <form class="md:w-[380px]">
+        <form class="md:w-[280px] lg:w-[380px] ">
           <label class="flex">
             <div class="flex justify-center items-center pl-5 bg-light_plus_primary"><span
                 class="material-icons">email</span></div>
-            <input type="email" value="" placeholder="請輸入電子信箱"
-              class="block w-full py-4 bg-light_plus_primary border-0  text-sm focus:ring-0 " />
-            <button class="bg-secondary px-5 flex items-center justify-center" type="submit"><span
-                class="material-icons">arrow_forward</span></button>
+            <input id="emailSub" type="email" value="" placeholder="請輸入電子信箱"
+              class="emailSub block w-full py-4 bg-light_plus_primary border-0  text-sm focus:ring-0 " />
+            <button class="emailBtn group bg-secondary px-5 flex items-center justify-center lg:hover:bg-primary lg:hover:duration-300 lg:hover:ease-in-out" type="submit"><span
+                class="material-icons lg:group-hover:text-secondary lg:group-hover:duration-300 lg:group-hover:ease-in-out">arrow_forward</span></button>
           </label>
         </form>
       </div>

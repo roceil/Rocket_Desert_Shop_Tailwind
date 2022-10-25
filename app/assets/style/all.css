@@ -4,10 +4,10 @@
 
 @layer base {
   body {
-    @apply text-base leading-[1.45454] text-primary
+    @apply text-base leading-[1.45454] text-primary;
   }
   span {
-    @apply text-primary
+    @apply text-primary;
   }
 }
 
@@ -16,6 +16,12 @@
     writing-mode: vertical-lr;
   }
   .shadow-banner {
-    box-shadow:0 180px rgb(255 225 128 / 50%) inset ; 
+    box-shadow: 0 180px rgb(255 225 128 / 50%) inset;
+  }
+  .banner-bg {
+    @apply bg-img-favorite01 bg-no-repeat bg-center bg-cover -z-20  ; 
+  }
+  .banner-filter {
+    @apply  
   }
 }

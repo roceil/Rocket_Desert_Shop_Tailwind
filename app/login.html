@@ -1,0 +1,153 @@
+---
+title: login
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section
+  class="lg:container lg:my-[60px] lg:flex lg:items-center lg:justify-center"
+>
+  <!-- 左邊會員登入區塊 -->
+  <div class="lg:w-[390px]">
+    <!-- 標題區塊 -->
+    <div class="flex items-center justify-center bg-primary">
+      <h2 class="py-[30px] text-4xl font-semibold leading-[1.38888] text-white">
+        會員登入
+      </h2>
+    </div>
+
+    <!-- 社群按鈕區塊 -->
+    <div class="bg-light_plus_primary lg:hidden">
+      <ul class="flex items-center justify-center p-[30px]">
+        <!-- facebook -->
+        <li
+          class="h-full w-[105px] border border-light_plus_primary bg-white hover:opacity-80 hover:duration-300 hover:ease-in-out lg:cursor-pointer"
+        >
+          <a href="#" class="flex h-14 items-center justify-center">
+            <img
+              src="https://tina3295.github.io/sweet_taste/sweets%20community/images/ic-facebook-logotype.png"
+              alt=""
+              class="w-[83.4px]"
+            />
+          </a>
+        </li>
+
+        <!-- google -->
+        <li
+          class="h-14 w-[105px] border-y-0 border-light_plus_primary bg-white hover:opacity-80 hover:duration-300 hover:ease-in-out lg:cursor-pointer"
+        >
+          <a href="#" class="flex h-full items-center justify-center">
+            <img
+              src="https://tina3295.github.io/sweet_taste/sweets%20community/images/ic-google.png"
+              alt=""
+              class="w-[83.4px]"
+            />
+          </a>
+        </li>
+
+        <!-- yahoo -->
+        <li
+          class="h-full w-[105px] border border-light_plus_primary bg-white hover:opacity-80 hover:duration-300 hover:ease-in-out lg:cursor-pointer"
+        >
+          <a href="#" class="flex h-14 items-center justify-center">
+            <img
+              src="https://tina3295.github.io/sweet_taste/sweets%20community/images/ic-yahoo.png"
+              alt=""
+              class="w-[83.4px]"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 帳號密碼輸入區塊 -->
+    <div class="bg-primary p-[30px] md:flex md:justify-center">
+      <form class="w-full">
+        <!-- 帳號區塊 -->
+        <label class="mb-4 flex">
+          <div
+            class="flex items-center justify-center bg-light_plus_primary pl-5"
+          >
+            <span class="material-symbols-outlined"> person_filled </span>
+          </div>
+          <input
+            type="text"
+            value=""
+            placeholder="電子信箱/手機號碼"
+            class="block w-full border-0 bg-light_plus_primary py-4 text-sm placeholder:text-primary focus:ring-0"
+          />
+        </label>
+        <!-- 密碼區塊 -->
+        <label class="flex mb-[13px]">
+          <div
+            class="flex items-center justify-center bg-light_plus_primary pl-5"
+          >
+            <span class="material-symbols-outlined"> vpn_key </span>
+          </div>
+          <input
+            type="password"
+            value=""
+            placeholder="請輸入使用者密碼"
+            class="block w-full border-0 bg-light_plus_primary py-4 text-sm placeholder:text-primary focus:ring-0"
+          />
+        </label>
+        <!-- 記住我區塊 -->
+        <label class="flex items-center">
+          <input class="mr-2 bg-light_plus_primary checked:text-primary checked:ring-[1px] checked:ring-light_plus_primary" type="checkbox" name="" id="">
+          <span class="text-light_plus_primary">記住我</span>
+        </label>
+      </form>
+    </div>
+
+    <!-- 登入按鈕區塊 -->
+    <div class="bg-secondary group lg:hover:bg-primary lg:hover:duration-300 lg:hover:ease-in-out">
+      <button
+        class="w-full py-4 text-center text-2xl font-semibold leading-[1.375] lg:group-hover:text-secondary"
+        type="submit"
+      >
+        登入帳號
+      </button>
+    </div>
+  </div>
+  <!-- 右邊社群帳號區塊 -->
+  <div class="hidden w-[390px] py-[15px] lg:block">
+    <div class="bg-light_plus_primary px-[30px] py-10 text-center">
+      <h3 class="mb-9 text-2xl font-light leading-[1.375] text-light_primary">
+        —— 連結社群帳號 ——
+      </h3>
+      <!-- 按鈕區塊 -->
+      <ul class="">
+        <!-- facebook -->
+        <li class="mb-4">
+          <button class="flex h-14 w-full items-center justify-center bg-white">
+            <img
+              src="https://tina3295.github.io/sweet_taste/sweets%20community/images/ic-facebook-logotype.png"
+              alt=""
+            />
+          </button>
+        </li>
+
+        <!-- google -->
+        <li class="mb-4">
+          <button class="flex h-14 w-full items-center justify-center bg-white">
+            <img
+              src="https://tina3295.github.io/sweet_taste/sweets%20community/images/ic-google.png"
+              alt=""
+            />
+          </button>
+        </li>
+
+        <!-- yahoo -->
+        <li class="">
+          <button class="flex h-14 w-full items-center justify-center bg-white">
+            <img
+              src="https://tina3295.github.io/sweet_taste/sweets%20community/images/ic-yahoo.png"
+              alt=""
+            />
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

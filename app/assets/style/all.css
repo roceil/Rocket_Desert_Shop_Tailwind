@@ -22,24 +22,33 @@
     box-shadow: 0 180px rgb(255 225 128 / 50%) inset;
   }
   .banner-before-01 {
-    @apply before:absolute before:w-full before:h-full before:top-0 before:backdrop-blur-[5px] before:bg-secondary/80 before:hover:backdrop-blur-none before:hover:bg-secondary/50 before:hover:duration-300 before:hover:ease-in-out; 
+    @apply before:absolute before:top-0 before:h-full before:w-full before:bg-secondary/80 before:backdrop-blur-[5px] before:hover:bg-secondary/50 before:hover:backdrop-blur-none before:hover:duration-300 before:hover:ease-in-out;
   }
   .banner-before-02 {
-    @apply before:absolute before:w-full before:h-full before:top-0 before:backdrop-blur-[5px] before:bg-primary/80 before:hover:backdrop-blur-none before:hover:bg-primary/50 before:hover:duration-300 before:hover:ease-in-out; 
+    @apply before:absolute before:top-0 before:h-full before:w-full before:bg-primary/80 before:backdrop-blur-[5px] before:hover:bg-primary/50 before:hover:backdrop-blur-none before:hover:duration-300 before:hover:ease-in-out;
   }
   .banner-before-03 {
-    @apply before:absolute before:w-full before:h-full before:top-0 before:backdrop-blur-[5px] before:bg-primary/80 before:hover:backdrop-blur-none before:hover:bg-primary/50 before:hover:duration-300 before:hover:ease-in-out; 
+    @apply before:absolute before:top-0 before:h-full before:w-full before:bg-primary/80 before:backdrop-blur-[5px] before:hover:bg-primary/50 before:hover:backdrop-blur-none before:hover:duration-300 before:hover:ease-in-out;
   }
   .banner-after-01 {
-    @apply  after:bg-img-favorite01 after:absolute after:w-full after:h-full after:top-0 after:left-0 after:-z-20 after:bg-center after:bg-no-repeat after:bg-cover 
+    @apply after:absolute after:top-0 after:left-0 after:-z-20 after:h-full after:w-full after:bg-img-favorite01 after:bg-cover after:bg-center after:bg-no-repeat;
   }
   .banner-after-02 {
-    @apply  after:bg-img-favorite02 after:absolute after:w-full after:h-full after:top-0 after:left-0 after:-z-20 after:bg-center after:bg-no-repeat after:bg-cover 
+    @apply after:absolute after:top-0 after:left-0 after:-z-20 after:h-full after:w-full after:bg-img-favorite02 after:bg-cover after:bg-center after:bg-no-repeat;
   }
   .banner-after-03 {
-    @apply  after:bg-img-favorite03 after:absolute after:w-full after:h-full after:top-0 after:left-0 after:-z-20 after:bg-center after:bg-no-repeat after:bg-cover 
+    @apply after:absolute after:top-0 after:left-0 after:-z-20 after:h-full after:w-full after:bg-img-favorite03 after:bg-cover after:bg-center after:bg-no-repeat;
   }
-  .test{
-    font: normal normal 600 24px/40px PingFang TC;
+  .after-BG {
+    @apply after:absolute after:top-5 after:left-0 after:-z-20 after:h-[420px] after:w-full after:bg-light_plus_primary;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 48;
+  }
+  .material-symbols-outlined-noFilled {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 48;
+  }
+  .after-baseline {
+    @apply lg:after:absolute lg:after:bottom-0 lg:after:left-1/2 lg:after:h-[1px] lg:after:w-[260px] lg:after:translate-x-[-50%] lg:after:bg-white
   }
 }

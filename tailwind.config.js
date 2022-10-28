@@ -13,6 +13,8 @@ module.exports = {
         'img-favorite02': "url('https://tina3295.github.io/sweet_taste/sweet%20homepage/images/SW05.png')",
         'img-favorite03': "url('https://tina3295.github.io/sweet_taste/sweet%20homepage/images/SW03.png')",
         'favoBtn': "url('https://tina3295.github.io/sweet_taste/sweet/images/favorite_border.png')",
+        'pay-success-bg': "url('https://tina3295.github.io/sweet_taste/sweets%20pay%20success/images/payment_success.jpg')",
+        'address-btn': "url('https://tina3295.github.io/sweet_taste/sweets%20delivery/images/sort-solid.svg')",
       }
     },
     container: {

@@ -1,0 +1,50 @@
+---
+title: 購物車
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section>
+  <div class="lg:container lg:mb-[60px]">
+    <!-- 付款成功圖片區塊 -->
+    <div
+      class="flex h-[calc(100vh-64px-84px)] flex-col items-center justify-center bg-pay-success-bg bg-cover bg-center bg-no-repeat md:h-[calc(100vh-64px-100px)] lg:h-[460px]"
+    >
+      <img
+        class="mb-[31.2px] w-[190px]"
+        src="https://tina3295.github.io/sweet_taste/sweets%20pay%20success/images/bar_payment_success.svg"
+        alt=""
+      />
+      <img
+        class="w-[190px] lg:mb-[51.34px]"
+        src="https://tina3295.github.io/sweet_taste/sweets%20pay%20success/images/paySuccess.svg"
+        alt=""
+      />
+      <!-- 電腦版結帳按鈕區塊 -->
+      <div
+        class="group hidden bg-secondary text-center lg:block lg:w-[300px] lg:hover:bg-primary lg:hover:duration-300 lg:hover:ease-in-out"
+      >
+        <a
+          class="w-full py-4 text-center text-2xl font-semibold lg:group-hover:text-secondary"
+          type="submit"
+          href="shoplist.html"
+        >
+          繼續逛逛
+        </a>
+      </div>
+    </div>
+    <!-- 手機＆平版結帳按鈕區塊 -->
+    <div
+      class="group bg-secondary text-center lg:hidden lg:hover:bg-primary lg:hover:duration-300 lg:hover:ease-in-out"
+    >
+      <a
+        class="w-full py-4 text-center text-2xl font-semibold lg:group-hover:text-secondary"
+        type="submit"
+        href="shoplist.html"
+      >
+        繼續逛逛
+      </a>
+    </div>
+  </div>
+</section>

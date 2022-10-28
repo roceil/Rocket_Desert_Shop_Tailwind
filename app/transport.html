@@ -9,96 +9,98 @@ current: index
   class="flex justify-center bg-primary lg:mb-[60px] lg:space-x-5 lg:bg-transparent"
 >
   <!-- 左邊運送資料 -->
-  <div class="w-[375px] bg-primary pt-[30px] md:pb-[30px] lg:w-[460px] lg:pb-0">
-    <!-- 上方標題區域 -->
-    <div class="container flex items-baseline justify-between">
-      <h2 class="text-4xl leading-[1.38888] text-white">運送</h2>
-      <img
-        class="block w-[153px]"
-        src="https://tina3295.github.io/sweet_taste/sweets%20delivery/images/bar_delivery.svg"
-        alt=""
-      />
-    </div>
-    <!-- 下方表單區 -->
-    <div class="mb-[30px]">
-      <!-- 姓名表單 -->
-      <form
-        class="container mt-[30px] flex items-center justify-between space-x-[9px]"
-      >
-        <!-- 姓氏 -->
-        <label class="w-1/2">
-          <span class="mb-2 block text-white">姓氏</span>
-          <input
-            class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-            type="text"
-            value=""
-            placeholder="王"
-          />
-        </label>
-        <!-- 名字 -->
-        <label class="w-1/2">
-          <span class="mb-2 block text-white">名字</span>
-          <input
-            class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-            type="text"
-            value=""
-            placeholder="小明"
-          />
-        </label>
-      </form>
-      <!-- 電話表單 -->
-      <form class="container mt-4">
-        <label class="w-full">
-          <span class="mb-2 block text-white">電話</span>
-          <input
-            class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-            type="text"
-            value=""
-            placeholder="0912-345-678"
-          />
-        </label>
-      </form>
-      <!-- 地址表單 -->
-      <form class="container mt-4 space-x-[9px]">
-        <label class="">
-          <span class="mb-2 block text-white">地址</span>
-          <div class="flex items-center justify-between space-x-[9px]">
-            <!-- 縣市 -->
-            <div
-              class="relative w-1/2 after:absolute after:top-1/2 after:right-[18px] after:h-6 after:w-6 after:translate-y-[-50%] after:bg-address-btn after:bg-center after:bg-no-repeat lg:after:cursor-pointer"
-            >
-              <input
-                class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-                type="text"
-                value=""
-                placeholder="高雄市"
-              />
+  <div class="w-[375px] bg-primary pt-[30px] md:pb-[30px] lg:w-[460px] lg:pb-0 lg:flex lg:flex-col lg:justify-between">
+    <div class="">
+      <!-- 上方標題區域 -->
+      <div class="container flex items-baseline justify-between">
+        <h2 class="text-4xl leading-[1.38888] text-white">運送</h2>
+        <img
+          class="block w-[153px]"
+          src="https://tina3295.github.io/sweet_taste/sweets%20delivery/images/bar_delivery.svg"
+          alt=""
+        />
+      </div>
+      <!-- 下方表單區 -->
+      <div class="mb-[30px]">
+        <!-- 姓名表單 -->
+        <form
+          class="container mt-[30px] flex items-center justify-between space-x-[9px]"
+        >
+          <!-- 姓氏 -->
+          <label class="w-1/2">
+            <span class="mb-2 block text-white">姓氏</span>
+            <input
+              class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+              type="text"
+              value=""
+              placeholder="王"
+            />
+          </label>
+          <!-- 名字 -->
+          <label class="w-1/2">
+            <span class="mb-2 block text-white">名字</span>
+            <input
+              class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+              type="text"
+              value=""
+              placeholder="小明"
+            />
+          </label>
+        </form>
+        <!-- 電話表單 -->
+        <form class="container mt-4">
+          <label class="w-full">
+            <span class="mb-2 block text-white">電話</span>
+            <input
+              class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+              type="text"
+              value=""
+              placeholder="0912-345-678"
+            />
+          </label>
+        </form>
+        <!-- 地址表單 -->
+        <form class="container mt-4 space-x-[9px]">
+          <label class="">
+            <span class="mb-2 block text-white">地址</span>
+            <div class="flex items-center justify-between space-x-[9px]">
+              <!-- 縣市 -->
+              <div
+                class="relative w-1/2 after:absolute after:top-1/2 after:right-[18px] after:h-6 after:w-6 after:translate-y-[-50%] after:bg-address-btn after:bg-center after:bg-no-repeat lg:after:cursor-pointer"
+              >
+                <input
+                  class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+                  type="text"
+                  value=""
+                  placeholder="高雄市"
+                />
+              </div>
+              <!-- 區域 -->
+              <div
+                class="relative w-1/2 after:absolute after:top-1/2 after:right-[18px] after:h-6 after:w-6 after:translate-y-[-50%] after:bg-address-btn after:bg-center after:bg-no-repeat lg:after:cursor-pointer"
+              >
+                <input
+                  class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+                  type="text"
+                  value=""
+                  placeholder="新興區"
+                />
+              </div>
             </div>
-            <!-- 區域 -->
-            <div
-              class="relative w-1/2 after:absolute after:top-1/2 after:right-[18px] after:h-6 after:w-6 after:translate-y-[-50%] after:bg-address-btn after:bg-center after:bg-no-repeat lg:after:cursor-pointer"
-            >
-              <input
-                class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-                type="text"
-                value=""
-                placeholder="新興區"
-              />
-            </div>
-          </div>
-        </label>
-      </form>
-      <!-- 詳細地址表單 -->
-      <form class="container mt-2">
-        <label class="w-full">
-          <input
-            class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-            type="text"
-            value=""
-            placeholder="幸福路 520 號"
-          />
-        </label>
-      </form>
+          </label>
+        </form>
+        <!-- 詳細地址表單 -->
+        <form class="container mt-2">
+          <label class="w-full">
+            <input
+              class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+              type="text"
+              value=""
+              placeholder="幸福路 520 號"
+            />
+          </label>
+        </form>
+      </div>
     </div>
     <!-- 下方按鈕區 -->
     <div class="md:px-[30px] lg:px-0">
@@ -116,5 +118,81 @@ current: index
     </div>
   </div>
   <!-- 右邊訂單資料 -->
-  <div class="hidden w-[300px] bg-slate-500 lg:block"></div>
+  <div class="lg:w-[300px]">
+    <!-- 訂單摘要 -->
+    <div class="hidden lg:block">
+      <h3
+        class="bg-light_plus_primary py-4 text-center text-2xl text-light_primary"
+      >
+        訂單摘要
+      </h3>
+      <ul class="border border-light_plus_primary py-4 px-5">
+        <!-- 小計 -->
+        <li class="flex justify-between text-light_primary">
+          <p>小計</p>
+          <p>NT$ 2,700</p>
+        </li>
+        <!-- 運費 -->
+        <li class="mt-2 flex justify-between text-light_primary">
+          <p>小計</p>
+          <p>NT$ 300</p>
+        </li>
+        <!-- 總計 -->
+        <li
+          class="mt-4 flex justify-between text-xl font-semibold text-light_primary"
+        >
+          <p>總計</p>
+          <p>NT$ 3,000</p>
+        </li>
+      </ul>
+    </div>
+    <!-- 購物清單 -->
+    <div class="mt-5 hidden lg:block">
+      <h3
+        class="bg-light_plus_primary py-4 text-center text-2xl text-light_primary"
+      >
+        訂單摘要
+      </h3>
+      <ul class="border border-light_plus_primary py-4 px-5">
+        <!-- 01 -->
+        <li class="flex justify-between">
+          <img
+            class="h-20 w-[120px] object-cover"
+            src="https://tina3295.github.io/sweet_taste/sweets%20delivery/images/p-8.jpg"
+            alt=""
+          />
+          <div class="flex flex-col justify-center text-light_primary">
+            <p class="mb-[2px]">焦糖馬卡龍（2）</p>
+            <p class="text-xl font-semibold">NT$ 900</p>
+          </div>
+        </li>
+
+        <!-- 02 -->
+        <li class="flex justify-between mt-4">
+          <img
+            class="h-20 w-[120px] object-cover"
+            src="https://tina3295.github.io/sweet_taste/sweets%20delivery/images/p-8.jpg"
+            alt=""
+          />
+          <div class="flex flex-col justify-center text-light_primary">
+            <p class="mb-[2px]">焦糖馬卡龍（2）</p>
+            <p class="text-xl font-semibold">NT$ 900</p>
+          </div>
+        </li>
+
+        <!-- 03 -->
+        <li class="flex justify-between mt-4">
+          <img
+            class="h-20 w-[120px] object-cover"
+            src="https://tina3295.github.io/sweet_taste/sweets%20delivery/images/p-8.jpg"
+            alt=""
+          />
+          <div class="flex flex-col justify-center text-light_primary">
+            <p class="mb-[2px]">焦糖馬卡龍（2）</p>
+            <p class="text-xl font-semibold">NT$ 900</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>

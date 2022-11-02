@@ -990,6 +990,14 @@ select {
   padding-top: 8.5px;
   padding-bottom: 8.5px;
 }
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+.py-\[16px\] {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 .pt-\[30px\] {
   padding-top: 30px;
 }

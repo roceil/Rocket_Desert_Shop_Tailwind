@@ -774,17 +774,14 @@ select {
 .h-\[60px\] {
   height: 60px;
 }
-.w-\[375px\] {
-  width: 375px;
+.w-full {
+  width: 100%;
 }
 .w-\[153px\] {
   width: 153px;
 }
 .w-1\/2 {
   width: 50%;
-}
-.w-full {
-  width: 100%;
 }
 .w-\[120px\] {
   width: 120px;
@@ -961,6 +958,10 @@ select {
 .p-1 {
   padding: 0.25rem;
 }
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .py-\[14px\] {
   padding-top: 14px;
   padding-bottom: 14px;
@@ -985,17 +986,9 @@ select {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.px-\[30px\] {
-  padding-left: 30px;
-  padding-right: 30px;
-}
 .py-\[8\.5px\] {
   padding-top: 8.5px;
   padding-bottom: 8.5px;
-}
-.px-\[\] {
-  padding-left: ;
-  padding-right: ;
 }
 .pt-\[30px\] {
   padding-top: 30px;
@@ -1281,7 +1274,7 @@ select {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: -4px;
+  top: -5px;
   -webkit-transition: top .3s ease-in-out, -webkit-transform .3s ease-in-out .3s;
   transition: top .3s ease-in-out, -webkit-transform .3s ease-in-out .3s;
   -o-transition: top .3s ease-in-out, transform .3s ease-in-out .3s;

@@ -21,12 +21,26 @@
   </head>
 
   <body>
-    <header class="py-[30px]">
+    <header class="py-[30px] fixed w-full bg-white  z-20 top-0">
       <!-- 手機用導覽列 -->
-      <div class="container flex items-center justify-between md:hidden">
-        <button class="flex items-center">
-          <span class="material-icons">menu</span>
-        </button>
+      <div class=" px-[30px] flex items-center justify-between md:hidden">
+        <!-- ! hamburger menu -->
+        <div>
+          <input type="checkbox" id="toggle">
+          <label for="toggle">
+            <div class="hamburger-container">
+              <span class="bg-primary"></span>
+              <span class="bg-primary"></span>
+            </div>
+          </label>
+          <div class="nav-item">
+            <ul>
+              <li><a class="text-center text-2xl font-semibold block py-4 bg-light_plus_primary " href="index.html">首頁</a></li>
+              <li><a class="text-center text-2xl font-semibold block py-4 bg-light_plus_primary " href="shoplist.html">甜點</a></li>
+              <li><a class="text-center text-2xl font-semibold block py-4 bg-light_plus_primary " href="login.html">登入</a></li>
+            </ul>
+          </div>
+        </div>
         <a href="index.html">
           <img
             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg"
@@ -34,7 +48,7 @@
             class="w-[114.14px]"
           />
         </a>
-        <a href="#" class="flex items-center"
+        <a href="shopcart.html" class="flex items-center"
           ><span class="material-icons">shopping_cart</span></a
         >
       </div>
@@ -87,7 +101,7 @@
 <!-- banner -->
 <section class="lg:mb-[60px]">
   <div class="md:container">
-    <img src="https://tina3295.github.io/sweet_taste/sweet/images/banner.png" alt="banner" class="object-cover">
+    <img src="https://tina3295.github.io/sweet_taste/sweet/images/banner.png" alt="banner" class="object-cover mt-[84px] md:mt-[100.81px]">
   </div>
 </section>
 
@@ -145,7 +159,7 @@
             <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
           </div>
           <!-- 商品圖片 -->
-          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1">
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-2.png" alt="p-1">
           <!-- 商品名稱 -->
           <div class="flex">
             <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">
@@ -167,7 +181,7 @@
             <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
           </div>
           <!-- 商品圖片 -->
-          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1">
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-3.png" alt="p-1">
           <!-- 商品名稱 -->
           <div class="flex">
             <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">
@@ -189,7 +203,7 @@
             <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
           </div>
           <!-- 商品圖片 -->
-          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1">
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-4.png" alt="p-1">
           <!-- 商品名稱 -->
           <div class="flex">
             <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">
@@ -211,7 +225,7 @@
             <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
           </div>
           <!-- 商品圖片 -->
-          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1">
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-5.png" alt="p-1">
           <!-- 商品名稱 -->
           <div class="flex">
             <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">
@@ -233,7 +247,7 @@
             <p class="text-white writing-rl font-semibold tracking-[6px]">本日精選</p>
           </div>
           <!-- 商品圖片 -->
-          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-1.png" alt="p-1">
+          <img src="https://tina3295.github.io/sweet_taste/sweet/images/p-6.png" alt="p-1">
           <!-- 商品名稱 -->
           <div class="flex">
             <p class="text-xl text-center leading-[1.4] font-light py-[14px] border border-light_plus_primary w-1/2">

@@ -21,12 +21,26 @@
   </head>
 
   <body>
-    <header class="py-[30px]">
+    <header class="py-[30px] fixed w-full bg-white  z-20 top-0">
       <!-- 手機用導覽列 -->
-      <div class="container flex items-center justify-between md:hidden">
-        <button class="flex items-center">
-          <span class="material-icons">menu</span>
-        </button>
+      <div class=" px-[30px] flex items-center justify-between md:hidden">
+        <!-- ! hamburger menu -->
+        <div>
+          <input type="checkbox" id="toggle">
+          <label for="toggle">
+            <div class="hamburger-container">
+              <span class="bg-primary"></span>
+              <span class="bg-primary"></span>
+            </div>
+          </label>
+          <div class="nav-item">
+            <ul>
+              <li><a class="text-center text-2xl font-semibold block py-4 bg-light_plus_primary " href="index.html">首頁</a></li>
+              <li><a class="text-center text-2xl font-semibold block py-4 bg-light_plus_primary " href="shoplist.html">甜點</a></li>
+              <li><a class="text-center text-2xl font-semibold block py-4 bg-light_plus_primary " href="login.html">登入</a></li>
+            </ul>
+          </div>
+        </div>
         <a href="index.html">
           <img
             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg"
@@ -34,7 +48,7 @@
             class="w-[114.14px]"
           />
         </a>
-        <a href="#" class="flex items-center"
+        <a href="shopcart.html" class="flex items-center"
           ><span class="material-icons">shopping_cart</span></a
         >
       </div>
@@ -85,7 +99,7 @@
 
     
 <section
-  class="flex justify-center bg-primary lg:mb-[60px] lg:space-x-5 lg:bg-transparent"
+  class="flex justify-center bg-primary lg:mb-[60px] lg:space-x-5 lg:bg-transparent mt-[84px] md:mt-[100.81px]"
 >
   <!-- 左邊運送資料 -->
   <div class="w-[375px] bg-primary pt-[30px] md:pb-[30px] lg:w-[460px] lg:pb-0 lg:flex lg:flex-col lg:justify-between">
@@ -189,7 +203,7 @@
         <a
           class="w-full py-4 text-center text-2xl font-semibold leading-[1.375] lg:group-hover:text-secondary"
           type="submit"
-          href="transport.html"
+          href="pay.html"
         >
           下一步
         </a>
@@ -230,7 +244,7 @@
       <h3
         class="bg-light_plus_primary py-4 text-center text-2xl text-light_primary"
       >
-        訂單摘要
+        購物清單
       </h3>
       <ul class="border border-light_plus_primary py-4 px-5">
         <!-- 01 -->
@@ -250,7 +264,7 @@
         <li class="flex justify-between mt-4">
           <img
             class="h-20 w-[120px] object-cover"
-            src="https://tina3295.github.io/sweet_taste/sweets%20delivery/images/p-8.jpg"
+            src="https://tina3295.github.io/sweet_taste/sweets%20yourcart/images/p-5.png"
             alt=""
           />
           <div class="flex flex-col justify-center text-light_primary">
@@ -263,7 +277,7 @@
         <li class="flex justify-between mt-4">
           <img
             class="h-20 w-[120px] object-cover"
-            src="https://tina3295.github.io/sweet_taste/sweets%20delivery/images/p-8.jpg"
+            src="https://tina3295.github.io/sweet_taste/sweets%20yourcart/images/p-3.png"
             alt=""
           />
           <div class="flex flex-col justify-center text-light_primary">

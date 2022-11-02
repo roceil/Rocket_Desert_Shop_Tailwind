@@ -1,5 +1,5 @@
 ---
-title: 運送頁面
+title: 付款頁面
 layout: ./app/layout.ejs
 engine: ejs
 current: index
@@ -9,95 +9,117 @@ current: index
   class="flex justify-center bg-primary lg:mb-[60px] lg:space-x-5 lg:bg-transparent mt-[84px] md:mt-[100.81px]"
 >
   <!-- 左邊運送資料 -->
-  <div class="w-[375px] bg-primary pt-[30px] md:pb-[30px] lg:w-[460px] lg:pb-0 lg:flex lg:flex-col lg:justify-between">
+  <div
+    class="w-[375px] bg-primary pt-[30px] md:pb-[30px] lg:flex lg:w-[460px] lg:flex-col lg:justify-between lg:pb-0"
+  >
     <div class="">
       <!-- 上方標題區域 -->
       <div class="container flex items-baseline justify-between">
-        <h2 class="text-4xl leading-[1.38888] text-white">運送</h2>
+        <h2 class="text-4xl leading-[1.38888] text-white">付款</h2>
         <img
           class="block w-[153px]"
-          src="https://tina3295.github.io/sweet_taste/sweets%20delivery/images/bar_delivery.svg"
+          src="https://tina3295.github.io/sweet_taste/sweets%20pay/images/bar_payment.svg"
           alt=""
         />
       </div>
       <!-- 下方表單區 -->
       <div class="mb-[30px]">
-        <!-- 姓名表單 -->
-        <form
-          class="container mt-[30px] flex items-center justify-between space-x-[9px]"
-        >
-          <!-- 姓氏 -->
-          <label class="w-1/2">
-            <span class="mb-2 block text-white">姓氏</span>
-            <input
-              class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-              type="text"
-              value=""
-              placeholder="王"
-            />
-          </label>
-          <!-- 名字 -->
-          <label class="w-1/2">
-            <span class="mb-2 block text-white">名字</span>
-            <input
-              class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-              type="text"
-              value=""
-              placeholder="小明"
-            />
-          </label>
-        </form>
-        <!-- 電話表單 -->
+        <!-- 信用卡卡號 -->
         <form class="container mt-4">
-          <label class="w-full">
-            <span class="mb-2 block text-white">電話</span>
-            <input
-              class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-              type="text"
-              value=""
-              placeholder="0912-345-678"
-            />
-          </label>
-        </form>
-        <!-- 地址表單 -->
-        <form class="container mt-4 space-x-[9px]">
           <label class="">
-            <span class="mb-2 block text-white">地址</span>
+            <span class="mb-2 block text-white">信用卡卡號</span>
             <div class="flex items-center justify-between space-x-[9px]">
-              <!-- 縣市 -->
+              <!-- 卡號 -->
               <div
-                class="relative w-1/2 after:absolute after:top-1/2 after:right-[18px] after:h-6 after:w-6 after:translate-y-[-50%] after:bg-address-btn after:bg-center after:bg-no-repeat lg:after:cursor-pointer"
+                class="relative w-full after:absolute after:top-1/2 after:right-[18px] after:h-6 after:w-6 after:translate-y-[-50%] after:bg-credit-btn after:bg-center after:bg-no-repeat lg:after:cursor-pointer"
               >
                 <input
                   class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
                   type="text"
                   value=""
-                  placeholder="高雄市"
-                />
-              </div>
-              <!-- 區域 -->
-              <div
-                class="relative w-1/2 after:absolute after:top-1/2 after:right-[18px] after:h-6 after:w-6 after:translate-y-[-50%] after:bg-address-btn after:bg-center after:bg-no-repeat lg:after:cursor-pointer"
-              >
-                <input
-                  class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-                  type="text"
-                  value=""
-                  placeholder="新興區"
+                  placeholder="1234-5678-9123-4567"
                 />
               </div>
             </div>
           </label>
         </form>
-        <!-- 詳細地址表單 -->
-        <form class="container mt-2">
-          <label class="w-full">
-            <input
-              class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
-              type="text"
-              value=""
-              placeholder="幸福路 520 號"
-            />
+        <!-- 持卡人姓名 -->
+        <form class="container mt-4 space-x-[9px]">
+          <label class="">
+            <span class="mb-2 block text-white">持卡人姓名</span>
+            <div class="flex items-center justify-between space-x-[9px]">
+              <!-- 姓氏 -->
+              <div
+                class=""
+              >
+                <input
+                  class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+                  type="text"
+                  value=""
+                  placeholder="王"
+                />
+              </div>
+              <!-- 名字 -->
+              <div
+                class=""
+              >
+                <input
+                  class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+                  type="text"
+                  value=""
+                  placeholder="小明"
+                />
+              </div>
+            </div>
+          </label>
+        </form>
+        <!-- 有效期限 -->
+        <form class="container mt-4 space-x-[9px]">
+          <label class="">
+            <span class="mb-2 block text-white">有效期限</span>
+            <div class="flex items-center justify-between space-x-[9px]">
+              <!-- 月份 -->
+              <div
+                class="relative w-1/2 after:absolute after:top-1/2 after:right-[18px] after:h-6 after:w-6 after:translate-y-[-50%] after:bg-address-btn after:bg-center after:bg-no-repeat lg:after:cursor-pointer"
+              >
+                <input
+                  class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+                  type="text"
+                  value=""
+                  placeholder="月"
+                />
+              </div>
+              <!-- 年份 -->
+              <div
+                class="relative w-1/2 after:absolute after:top-1/2 after:right-[18px] after:h-6 after:w-6 after:translate-y-[-50%] after:bg-address-btn after:bg-center after:bg-no-repeat lg:after:cursor-pointer"
+              >
+                <input
+                  class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+                  type="text"
+                  value=""
+                  placeholder="年"
+                />
+              </div>
+            </div>
+          </label>
+        </form>
+        <!-- 背面末三碼 -->
+        <form class="container mt-4 space-x-[9px]">
+          <label class="">
+            <span class="mb-2 block text-white">背面末三碼</span>
+            <div class="flex items-center justify-between space-x-[9px]">
+              <!-- 末三碼 -->
+              <div
+                class="w-1/2"
+              >
+                <input
+                  class="focus:ring-3 w-full py-[15px] text-light_primary placeholder:text-light_primary focus:border-light_primary focus:ring-light_primary active:ring-light_primary"
+                  type="text"
+                  value=""
+                  placeholder="123"
+                />
+              </div>
+            </div>
           </label>
         </form>
       </div>
@@ -110,7 +132,7 @@ current: index
         <a
           class="w-full py-4 text-center text-2xl font-semibold leading-[1.375] lg:group-hover:text-secondary"
           type="submit"
-          href="pay.html"
+          href="e-invoice.html"
         >
           下一步
         </a>
@@ -168,7 +190,7 @@ current: index
         </li>
 
         <!-- 02 -->
-        <li class="flex justify-between mt-4">
+        <li class="mt-4 flex justify-between">
           <img
             class="h-20 w-[120px] object-cover"
             src="https://tina3295.github.io/sweet_taste/sweets%20yourcart/images/p-5.png"
@@ -181,7 +203,7 @@ current: index
         </li>
 
         <!-- 03 -->
-        <li class="flex justify-between mt-4">
+        <li class="mt-4 flex justify-between">
           <img
             class="h-20 w-[120px] object-cover"
             src="https://tina3295.github.io/sweet_taste/sweets%20yourcart/images/p-3.png"

@@ -15,6 +15,7 @@ module.exports = {
         'favoBtn': "url('https://tina3295.github.io/sweet_taste/sweet/images/favorite_border.png')",
         'pay-success-bg': "url('https://tina3295.github.io/sweet_taste/sweets%20pay%20success/images/payment_success.jpg')",
         'address-btn': "url('https://tina3295.github.io/sweet_taste/sweets%20delivery/images/sort-solid.svg')",
+        'credit-btn': "url('    https://tina3295.github.io/sweet_taste/sweets%20pay/images/credit-card.svg')",
       }
     },
     container: {

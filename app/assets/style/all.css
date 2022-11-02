@@ -80,7 +80,7 @@
 }
 #toggle:checked + label .hamburger-container span:nth-child(2) {
   transform: rotate(-45deg);
-  top: -4px;
+  top: -5px;
   transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
 }
 .nav-item {
